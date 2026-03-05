@@ -85,10 +85,10 @@ class SQL:
 
 
 db_config = {
-    'host': "srv221-h-st.jino.ru",
-    'database': "j30084097_137",
-    'user': "j30084097_137",
-    'password': "Gruppa137"}
+    'host': "",
+    'database': "",
+    'user': "",
+    'password': ""}
 
 if __name__ == "__main__":
     db = SQL(db_config, "fridge")
@@ -102,5 +102,6 @@ if __name__ == "__main__":
     db.insert({"type_of_product": "молочка", "product": "йогурт", "quantity": 5})
     db.insert({"type_of_product": "овощи", "product": "помидор", "quantity": 3})
     db.insert({"type_of_product": "фрукты", "product": "банан", "quantity": 2})
+
 
     db.close()
